@@ -1,6 +1,6 @@
 # GlutenFree Santiago 🇨🇱
 
-Una aplicación web moderna diseñada para ayudar a la comunidad celíaca y personas que buscan opciones libres de gluten en Santiago de Chile. Encuentra restaurantes seguros, visualiza rutas y obtén información de contacto de forma rápida y sencilla.
+Una aplicación web moderna diseñada para ayudar a la comunidad celíaca y a personas que buscan opciones libres de gluten en Santiago de Chile. Encuentra restaurantes seguros, visualiza rutas y obtén información de contacto de forma rápida y sencilla.
 
 ## 🚀 Características
 
@@ -14,16 +14,16 @@ Una aplicación web moderna diseñada para ayudar a la comunidad celíaca y pers
 - **Vista de Listado:** Listado alfabético completo con detalles de contacto y tipo de menú.
 - **Filtros Rápidos:** Alterna fácilmente entre ver todos los lugares, solo los 100% libres de gluten o aquellos con opciones parciales.
 - **Acciones Directas:** Botón de llamada integrado en los detalles de cada restaurante.
-- **Diseño Moderno:** Interfaz responsiva con soporte nativo para **Modo Oscuro**.
+- **Diseño Moderno:** Interfaz adaptable con soporte nativo para **Modo Oscuro**.
 
-## 🛠️ Tech Stack
+## 🛠️ Tecnologías Utilizadas
 
 - **Framework:** [React 19](https://react.dev/)
 - **Lenguaje:** [TypeScript](https://www.typescriptlang.org/)
-- **Build Tool:** [Vite](https://vitejs.dev/)
+- **Herramienta de Construcción:** [Vite](https://vitejs.dev/)
 - **Estilos:** [Tailwind CSS 4](https://tailwindcss.com/)
-- **Mapas:** [Leaflet](https://leafletjs.com/) & [React-Leaflet](https://react-leaflet.js.org/)
-- **Rutas:** [Leaflet Routing Machine](http://www.liedman.net/leaflet-routing-machine/) & OSRM
+- **Mapas:** [Leaflet](https://leafletjs.com/) y [React-Leaflet](https://react-leaflet.js.org/)
+- **Motor de Rutas:** [Leaflet Routing Machine](http://www.liedman.net/leaflet-routing-machine/) y OSRM
 - **Iconos:** [Lucide React](https://lucide.dev/)
 
 ## 📦 Instalación y Uso
@@ -44,7 +44,7 @@ Una aplicación web moderna diseñada para ayudar a la comunidad celíaca y pers
     npm run dev
     ```
 
-4.  **Generar build de producción:**
+4.  **Generar versión de producción:**
     ```bash
     npm run build
     ```
