@@ -1,73 +1,57 @@
-# React + TypeScript + Vite
+# GlutenFree Santiago 🇨🇱
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Una aplicación web moderna diseñada para ayudar a la comunidad celíaca y personas que buscan opciones libres de gluten en Santiago de Chile. Encuentra restaurantes seguros, visualiza rutas y obtén información de contacto de forma rápida y sencilla.
 
-Currently, two official plugins are available:
+## 🚀 Características
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Mapa Interactivo:** Visualización de restaurantes con marcadores diferenciados:
+  - 🟢 **Verde:** 100% Sin Gluten.
+  - 🔵 **Azul:** Opciones Sin Gluten disponibles.
+- **Búsqueda Inteligente:** Encuentra tu ubicación actual ingresando calle y número.
+- **Rutas y Tiempos:** Cálculo automático de la mejor ruta desde tu ubicación seleccionada hacia cualquier restaurante.
+  - 🚗 Tiempo estimado en automóvil.
+  - 🚶 Tiempo estimado caminando (basado en perfiles reales de peatón).
+- **Vista de Listado:** Listado alfabético completo con detalles de contacto y tipo de menú.
+- **Filtros Rápidos:** Alterna fácilmente entre ver todos los lugares, solo los 100% libres de gluten o aquellos con opciones parciales.
+- **Acciones Directas:** Botón de llamada integrado en los detalles de cada restaurante.
+- **Diseño Moderno:** Interfaz responsiva con soporte nativo para **Modo Oscuro**.
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Framework:** [React 19](https://react.dev/)
+- **Lenguaje:** [TypeScript](https://www.typescriptlang.org/)
+- **Build Tool:** [Vite](https://vitejs.dev/)
+- **Estilos:** [Tailwind CSS 4](https://tailwindcss.com/)
+- **Mapas:** [Leaflet](https://leafletjs.com/) & [React-Leaflet](https://react-leaflet.js.org/)
+- **Rutas:** [Leaflet Routing Machine](http://www.liedman.net/leaflet-routing-machine/) & OSRM
+- **Iconos:** [Lucide React](https://lucide.dev/)
 
-## Expanding the ESLint configuration
+## 📦 Instalación y Uso
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+1.  **Clonar el repositorio:**
+    ```bash
+    git clone https://github.com/leacar21/glutenfree-santiago.git
+    cd glutenfree-santiago
+    ```
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+2.  **Instalar dependencias:**
+    ```bash
+    npm install
+    ```
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+3.  **Iniciar en modo desarrollo:**
+    ```bash
+    npm run dev
+    ```
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+4.  **Generar build de producción:**
+    ```bash
+    npm run build
+    ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📄 Licencia
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Este proyecto fue desarrollado para la comunidad. Siéntete libre de usarlo y mejorarlo.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+Hecho con ❤️ para la comunidad celíaca de Santiago.
