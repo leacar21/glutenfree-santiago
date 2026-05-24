@@ -121,8 +121,8 @@ function App() {
 
       {/* Footer */}
       <footer className="bg-white dark:bg-zinc-950 border-t border-zinc-200 dark:border-zinc-800 px-6 py-4 text-center">
-        <p className="text-xs text-zinc-500 dark:text-zinc-500 font-medium">
-          &copy; 2026 GlutenFree Santiago. Fuente: Catastro del Mercado Gastronómico RM.
+        <p className="text-sm text-zinc-500 dark:text-zinc-400">
+          &copy; 2026 GlutenFree Santiago. Hecho con ❤️ para la comunidad celíaca.
         </p>
       </footer>
     </div>
