@@ -109,7 +109,7 @@ export const MapView: React.FC<Props> = ({ restaurants }) => {
     walkingTime: number | null;
   } | null>(null);
   
-  const santiagoCenter: [number, number] = [-33.4489, -70.6693];
+  const santiagoCenter: [number, number] = [40.7306, -73.9352]; // New York Center
 
   const handleMarkerClick = (restaurant: Restaurant) => {
     setDestination(L.latLng(restaurant.lat, restaurant.lng));
